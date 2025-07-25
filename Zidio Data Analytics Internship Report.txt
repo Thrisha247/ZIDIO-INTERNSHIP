@@ -1,0 +1,118 @@
+Zidio Data Analytics Internship Report
+
+Intern Details
+Name: Thrisha
+Internship Title: Data Analytics Virtual Internship
+Company: Zidio
+Duration: June 2025 – July 2025
+Project Title: Stock Market Forecasting using ARIMA, LSTM, and Prophet
+
+
+Objective
+The objective of this project was to perform time series forecasting on stock market data using traditional statistical models (ARIMA, Prophet) and advanced deep learning models (LSTM). The goal was to analyze past stock prices and predict future values while comparing the performance of different models.
+
+
+
+
+Tools and Technologies Used
+
+Python
+
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+ARIMA, SARIMA (via pmdarima and statsmodels)
+
+Facebook Prophet
+
+LSTM (via TensorFlow and Keras)
+
+Jupyter Notebook / Google Colab
+
+yfinance (for stock data collection)
+
+
+
+
+
+Project Workflow
+
+Step 1: Data Collection
+
+Used the yfinance library to fetch historical stock data (e.g., TATASTEEL.NS) from 2015 to 2024.
+
+Downloaded and structured the dataset with necessary features like Date and Closing Price.
+
+
+Step 2: Data Preprocessing
+
+Checked for missing values and cleaned the dataset.
+
+Visualized trends, seasonality, and volatility using plots.
+
+Converted the date column to datetime format and set it as the index.
+
+
+Step 3: ARIMA Forecasting
+
+Applied ADF test to check stationarity.
+
+Used auto_arima to find the best parameters.
+
+Fitted the model and generated future forecasts.
+
+Visualized forecasted values with confidence intervals.
+
+
+Step 4: Prophet Forecasting
+
+Transformed data into Prophet format (columns: 'ds' and 'y').
+
+Fitted the Prophet model and forecasted future prices.
+
+Plotted components such as trend, weekly and yearly seasonality.
+
+
+Step 5: LSTM Forecasting
+
+Scaled the data using MinMaxScaler.
+
+Created time series sequences for model input.
+
+Built an LSTM model using TensorFlow/Keras.
+
+Trained the model and predicted future values.
+
+Compared predicted values with actual data using graphs.
+
+
+Step 6: Evaluation
+
+Compared models using RMSE and MAE metrics.
+
+Assessed which model performed best under specific conditions.
+
+Discussed strengths and limitations of each model.
+
+
+
+
+
+Results
+
+All models provided reasonable forecasts of stock prices.
+
+Prophet handled trend and seasonality components effectively.
+
+LSTM provided more adaptive predictions but required significant data preprocessing and training.
+
+ARIMA was effective for short-term linear forecasts with minimal computation.
+
+
+
+
+
+Conclusion
+This internship provided hands-on experience with real-world stock market data and various forecasting techniques. It improved understanding of time series modeling, model evaluation, and data visualization. The project also highlighted how deep learning models like LSTM can offer better performance in certain scenarios when compared to traditional models.
+
